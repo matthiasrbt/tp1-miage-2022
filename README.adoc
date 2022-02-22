@@ -38,7 +38,7 @@ TIP: [Rappel Git] Trois dépôts sont ici utilisés: le dépot Github de l'ensei
 * Observer le code du projet `todolist-debut-ex1`
 
 *Le code est-il structuré en couches ? Quels problèmes ce code peut-il poser ?*
-Non, ce code n'est pas structuré en couche. Cela entraîne plusieurs problèmes comme la difficulté à maintenir l'application ou ajouter de nouvelles fonctionnalités étant donné que les classes sont fortement dépendantes entre elles.
+Non, ce code n'est pas structuré en couche. Cela entraîne plusieurs problèmes comme la difficulté à maintenir l'application ou ajouter de nouvelles fonctionnalités étant donné que les classes sont fortement dépendantes entre elles. Cette interdépendance peut aussi rendre difficile la création de tests unitaires dans l'application.
 
 *Où se trouve le code métier (voir la règle de gestion RG 1) ?*
 
