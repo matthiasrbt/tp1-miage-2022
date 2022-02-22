@@ -37,7 +37,9 @@ TIP: [Rappel Git] Trois dépôts sont ici utilisés: le dépot Github de l'ensei
 
 * Observer le code du projet `todolist-debut-ex1`
 
-*Le code est-il structuré en couches ? Quel problèmes ce code peut-il poser ?*
+*Le code est-il structuré en couches ? Quels problèmes ce code peut-il poser ?*
+
+
 
 *Où se trouve le code métier (voir la règle de gestion RG 1) ?*
 
@@ -93,6 +95,7 @@ Source : http://leanpub.com/get-your-hands-dirty-on-clean-architecture[Tom Hombe
   - la couche `domain` qui contient les entités (au sens DDD, pas au sens JPA). En général des classes complexes (méthodes riches, relations entre les entités)
 
 *Rappeler en quelques lignes les grands principes de l'architecture hexagonale.*
+L'architecture hexagonale est un type d'architecture qui respecte la règle du couplage faible et cohérence forte. C'est à dire que le code est séparé en plusieurs composants pouvant être connectés à leur environnement à l'aide d'interfaces et d'adapteurs. Ce type d'architecture facilite l'utilisation de tests.
 
 Compléter ce code avec une fonctionnalité de création de `TodoItem`  persisté en base et appelé depuis un endpoint REST `POST /todos` qui :
 
