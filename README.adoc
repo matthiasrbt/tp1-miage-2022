@@ -50,6 +50,7 @@ Le code métier se touve dans la classe TodoItem.java. Elle contient un construc
 docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 ```
 *Expliquer cette ligne de commande (y compris les options utilisées)*
+Cette commande permet de lancer un conteneur docker contenant la base de données postgres, l'option -d permet de lancer ce conteneur en tâche de fond. Nous ajoutons le mot de passe et l'identifiant de l'utilisateur ainsi que le port pour se connecter à cette base.
 
 * Compléter le code manquant dans la méthode `TodoListController.createTodoItem()`
 
