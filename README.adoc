@@ -99,6 +99,7 @@ Source : http://leanpub.com/get-your-hands-dirty-on-clean-architecture[Tom Hombe
 
 *Rappeler en quelques lignes les grands principes de l'architecture hexagonale.*
 L'architecture hexagonale est un type d'architecture qui respecte la règle du couplage faible et cohérence forte. C'est à dire que le code est séparé en plusieurs composants pouvant être connectés à leur environnement à l'aide d'interfaces et d'adapteurs. Ce type d'architecture facilite l'utilisation de tests.
+L'architecture héxagonale repose sur 3 couches : le Domain,l’Application, l’Insfrastructure.
 
 Compléter ce code avec une fonctionnalité de création de `TodoItem`  persisté en base et appelé depuis un endpoint REST `POST /todos` qui :
 
@@ -114,9 +115,11 @@ _Temps estimé : 20 mins_
 
 * Implémenter (en junit) des TU sur la règle de gestion qui consiste à afficher `[LATE!]` dans la description d'un item en retard de plus de 24h.
 
-*Quels types de tests devra-t-on écrire pour les adapteurs ?* 
+*Quels types de tests devra-t-on écrire pour les adapteurs ?*
+Nous devrons écrire des tests unitaires afin de vérifier qu'un objet a été créé depuis au moins 10 jours ou il y a moins de 10 jours.
 
 *Que teste-on dans ce cas ?*
+Nous testons la fonction dans le cadre des tests unitaires.
 
 *S'il vous reste du temps, écrire quelques uns de ces types de test.*
 
